@@ -124,8 +124,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--y);outline-offset:3
 .btn.g{background:#fff;border:1px solid #fff;box-shadow:0 14px 26px rgba(0,0,0,.5),0 4px 0 rgba(0,0,0,.25)}
 .btn.g .t b{color:#2A0707;text-shadow:none}.btn.g .t span{color:#6B4A3A}.btn.g .go{color:#B91C1C}
 /* brilho suave e lento, defasado 1s entre botões */
-@keyframes shn2{0%,45%{transform:translateX(-170%) skewX(-18deg)}100%{transform:translateX(380%) skewX(-18deg)}}
-.btn.g::after,.btn.f1::after,.btn.f2::after,.btn.f3::after{display:block;content:"";position:absolute;top:0;bottom:0;left:0;width:34%;pointer-events:none;will-change:transform;transform:translateX(-170%) skewX(-18deg);animation:shn2 7s ease-in-out infinite both;background:linear-gradient(100deg,transparent,rgba(255,255,255,.2),transparent)}
+@keyframes shn2{0%,25%{transform:translateX(-170%) skewX(-18deg)}100%{transform:translateX(380%) skewX(-18deg)}}
+.btn.g::after,.btn.f1::after,.btn.f2::after,.btn.f3::after{display:block;content:"";position:absolute;top:0;bottom:0;left:0;width:34%;pointer-events:none;will-change:transform;transform:translateX(-170%) skewX(-18deg);animation:shn2 2.5s ease-in-out infinite both;background:linear-gradient(100deg,transparent,rgba(255,255,255,.2),transparent)}
 .btn.g::after{background:linear-gradient(100deg,transparent,rgba(170,180,190,.4),transparent);animation-delay:0s}
 .btn.f1::after{animation-delay:1s}.btn.f2::after{animation-delay:2s}.btn.f3::after{animation-delay:3s}
 @media(prefers-reduced-motion:reduce){.btn.g::after,.btn.f1::after,.btn.f2::after,.btn.f3::after{display:none}}

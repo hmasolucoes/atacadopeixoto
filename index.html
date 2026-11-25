@@ -94,6 +94,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--y);outline-offset:3
 .btn.g .ic{border-color:rgba(0,0,0,.08);box-shadow:0 3px 6px rgba(0,0,0,.15)}
 .wr .t b{color:#fff}.wr .t span{color:#5B2A22}
 @media(prefers-reduced-motion:reduce){.btn::after{animation:none;display:none}}
+/* botoes brancos; reflexo e brilho so no Google */
+.btn:not(.g),.wr,.main{background:#fff;border:1px solid #fff;color:#2A0707;box-shadow:0 12px 24px rgba(0,0,0,.45),0 3px 0 rgba(0,0,0,.18),inset 0 -6px 12px rgba(0,0,0,.06)}
+.btn:not(.g)::before,.btn:not(.g)::after,.wr::before{display:none;animation:none}
+.main .t span{color:#5B2A22}
 </style>
 </head>
 <body>
